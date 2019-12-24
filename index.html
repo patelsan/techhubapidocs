@@ -1632,7 +1632,7 @@ public class IdeaApiExample {
         IdeaApi apiInstance = new IdeaApi();
         String id = id_example; // String | Idea object that you want
         try {
-            Object result = apiInstance.getIdea(id);
+            IdeaViewModel result = apiInstance.getIdea(id);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling IdeaApi#getIdea");
@@ -1651,7 +1651,7 @@ public class IdeaApiExample {
         IdeaApi apiInstance = new IdeaApi();
         String id = id_example; // String | Idea object that you want
         try {
-            Object result = apiInstance.getIdea(id);
+            IdeaViewModel result = apiInstance.getIdea(id);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling IdeaApi#getIdea");
@@ -1671,7 +1671,7 @@ IdeaApi *apiInstance = [[IdeaApi alloc] init];
 
 // get an existing idea/ suggestion
 [apiInstance getIdeaWith:id
-              completionHandler: ^(Object output, NSError* error) {
+              completionHandler: ^(IdeaViewModel output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -1724,7 +1724,7 @@ namespace Example
             try
             {
                 // get an existing idea/ suggestion
-                Object result = apiInstance.getIdea(id);
+                IdeaViewModel result = apiInstance.getIdea(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1845,7 +1845,7 @@ except ApiException as e:
                                         var schemaWrapper = {
   "description" : "OK",
   "schema" : {
-    "type" : "object"
+    "$ref" : "#/definitions/IdeaViewModel"
   }
 };
                                         var schema = schemaWrapper.schema;
@@ -4156,7 +4156,7 @@ public class PocApiExample {
         PocApi apiInstance = new PocApi();
         String id = id_example; // String | PoC object that you want
         try {
-            Object result = apiInstance.getPoC(id);
+            PoCViewModel result = apiInstance.getPoC(id);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling PocApi#getPoC");
@@ -4175,7 +4175,7 @@ public class PocApiExample {
         PocApi apiInstance = new PocApi();
         String id = id_example; // String | PoC object that you want
         try {
-            Object result = apiInstance.getPoC(id);
+            PoCViewModel result = apiInstance.getPoC(id);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling PocApi#getPoC");
@@ -4195,7 +4195,7 @@ PocApi *apiInstance = [[PocApi alloc] init];
 
 // get an existing poc
 [apiInstance getPoCWith:id
-              completionHandler: ^(Object output, NSError* error) {
+              completionHandler: ^(PoCViewModel output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -4248,7 +4248,7 @@ namespace Example
             try
             {
                 // get an existing poc
-                Object result = apiInstance.getPoC(id);
+                PoCViewModel result = apiInstance.getPoC(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -4369,7 +4369,7 @@ except ApiException as e:
                                         var schemaWrapper = {
   "description" : "OK",
   "schema" : {
-    "type" : "object"
+    "$ref" : "#/definitions/PoCViewModel"
   }
 };
                                         var schema = schemaWrapper.schema;
@@ -6896,7 +6896,7 @@ public class SkillApiExample {
         SkillApi apiInstance = new SkillApi();
         String id = id_example; // String | Skill object that you want
         try {
-            Object result = apiInstance.getSkill(id);
+            SkillViewModel result = apiInstance.getSkill(id);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling SkillApi#getSkill");
@@ -6915,7 +6915,7 @@ public class SkillApiExample {
         SkillApi apiInstance = new SkillApi();
         String id = id_example; // String | Skill object that you want
         try {
-            Object result = apiInstance.getSkill(id);
+            SkillViewModel result = apiInstance.getSkill(id);
             System.out.println(result);
         } catch (ApiException e) {
             System.err.println("Exception when calling SkillApi#getSkill");
@@ -6935,7 +6935,7 @@ SkillApi *apiInstance = [[SkillApi alloc] init];
 
 // get an existing skill
 [apiInstance getSkillWith:id
-              completionHandler: ^(Object output, NSError* error) {
+              completionHandler: ^(SkillViewModel output, NSError* error) {
                             if (output) {
                                 NSLog(@"%@", output);
                             }
@@ -6988,7 +6988,7 @@ namespace Example
             try
             {
                 // get an existing skill
-                Object result = apiInstance.getSkill(id);
+                SkillViewModel result = apiInstance.getSkill(id);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -7109,7 +7109,7 @@ except ApiException as e:
                                         var schemaWrapper = {
   "description" : "OK",
   "schema" : {
-    "type" : "object"
+    "$ref" : "#/definitions/SkillViewModel"
   }
 };
                                         var schema = schemaWrapper.schema;
